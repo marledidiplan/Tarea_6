@@ -1,0 +1,26 @@
+
+<html>
+    <head>
+        <title>Multiplicar VANILLA</title>
+    </head>
+    <body>
+        <h1 id="header">JavaScrits Vanilla</h1>
+        <h3>Introduzca dos N&uacutemeros</h3>
+        <label for="">Numero 1:</label>
+        <input type="text" id="numero1">
+        <br><br>
+        <label for="">Numero 2:</label>
+        <input type="text" id="numero2">
+        <br><br>
+       <input type="button" id="Multi_button" value="Multiplicar">
+        <h4 id="footer"></h4>
+    </body>
+    <script>
+        document.getElementById("Multi_button").onclick = function() {
+            var num1 = document.getElementById('numero1').value;
+            var num2 = document.getElementById('numero2').value;
+            var multiplicar = parseInt(num1) * parseInt(num2);
+            document.getElementById("footer").innerHTML = "EL RESULTADO ES: " + multiplicar;    
+      }
+    </script>
+</html
